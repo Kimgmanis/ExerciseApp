@@ -9,3 +9,16 @@
 
 // Exercise: Implement a method with named and optional parameters. Working
 // SendM sendM = new SendM();
+
+// Exercise: Implement a method that deconstructs an object into tuple values. Working
+/*var person = new Person
+{
+    Name = "John",
+    Age = 30,
+    Occupation = "Software Engineer",
+    Salary = 75000.00m
+};
+
+var (name, age, occupation, salary) = person.GetPersonInfo();
+
+Console.WriteLine($"{name} is {age} years old and works as a {occupation}, earning {salary:C} per year.");*/
