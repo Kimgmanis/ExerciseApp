@@ -22,6 +22,25 @@ namespace ExerciseApp.Exercise
                 Month = month;
                 Day = day;
             }
+
+            public bool IsValid()
+            {
+                try
+                {
+                    DateTime dt = new DateTime(Year, Month, Day); // Creates dt obj from Year, Month, and Day
+                    return true; // valid; was able to create object
+                }
+                catch
+                {
+                    return false; // invalid unable to create object
+                }
+            }
+
+            // Convert date to string
+            public override string ToString()
+            {
+                return $"{Year:D4}-{Month:D2}-{Day:D2}";
+            }
         }
 
         // Ini
